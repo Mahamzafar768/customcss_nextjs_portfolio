@@ -18,9 +18,9 @@ const Hero = () => {
             <h1 className="text-2xl font-bold">Hello, I&apos;m</h1>
           </div>
 
-          <h1 className={styles.heroHeading}>Maham Zafar</h1>
+          <h1 className={`${lusitana.className} ${styles.heroHeading}`}>Maham Zafar</h1>
           <h2 className={styles.heroSubheading}>
-            <span className={styles.heroSubheadingHighlight}>FrontEnd Developer</span>
+            <span className={`${lusitana.className} ${styles.heroSubheadingHighlight}`}>FrontEnd Developer</span>
           </h2>
 
           <div className={styles.heroButtonContainer}>
