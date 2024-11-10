@@ -1,0 +1,575 @@
+/* Navbar section */
+
+.navbarContainer {
+    background-color: #271e35;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  .navbarLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9e6e5;
+  }
+  
+  .navbarMenu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.125rem;
+    color: #e9e6e5;
+  }
+  
+  .navbarMenuItem {
+    font-family: 'Lusitana', serif;
+    color: #e9e6e5;
+  }
+  
+  .navbarMenuItemActive {
+    color: #02e5f2;
+  }
+  
+  .navbarMenuIcon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+  }
+  
+  .navbarMobileMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #323846;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+  
+  .navbarMobileMenuLink {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbarMobileMenuLink:hover {
+    color: #02e5f2;
+  }
+  
+  @media (max-width: 768px) {
+    .navbarMenu {
+      display: none;
+    }
+  
+    .navbarMenuIcon {
+      display: block;
+    }
+  
+    .navbarMobileMenu {
+      display: flex;
+    }
+  }
+  
+  /* Hero Section */
+
+.heroSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #140023;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heroContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+  
+  .heroTextSection {
+    text-align: center;
+    font-family: 'Lusitana', serif;
+    color: #e9e6e5;
+  }
+  
+  .heroTextLeft {
+    text-align: left;
+  }
+  
+  .heroGreeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .heroHeading {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #eeeeee;
+  }
+  
+  .heroSubheading {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e9e6e5;
+  }
+  
+  .heroSubheadingHighlight {
+    color: #cc8b00;
+  }
+  
+  .heroButtonContainer {
+    background-color: #120e18;
+    width: 100%;
+    max-width: 240px;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-radius: 0.375rem;
+  }
+  
+  .heroButton {
+    font-family: 'Lusitana', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .heroImageSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroImage {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* About Section */
+
+.aboutSection {
+    background-color: #e4e4e4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .aboutHeading {
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc8b00;
+    margin-bottom: 1.5rem;
+  }
+  
+  .aboutSubheading {
+    font-family: 'Lusitana', serif;
+  }
+  
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .aboutImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .aboutImage {
+    border-radius: 9999px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .aboutTextContainer {
+    max-width: 32rem;
+    text-align: center;
+    font-family: 'Lusitana', serif;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .aboutQuoteIcon {
+    color: #cc8b00;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutQuoteText {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .aboutQuoteIconEnd {
+    color: #cc8b00;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .aboutEducationSection {
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+    margin-top: 2rem;
+  }
+  
+  .aboutEducationHeading {
+    font-family: 'Lusitana', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4b4b4b;
+  }
+  
+  .aboutEducationLine {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #cc8b00;
+    margin-bottom: 1.5rem;
+  }
+  
+  .aboutEducationList {
+    font-family: 'Lusitana', serif;
+    list-style-position: inside;
+    color: #4b4b4b;
+  }
+  
+  .aboutEducationItem {
+    margin-left: 1.5rem;
+  }
+  
+  .aboutEducationItemDate {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .aboutEducationItemTitle {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .aboutEducationItemInstitution {
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+
+/* Skill Section */
+
+.skillSection {
+    background-color: #140023;
+    min-height: 100vh;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .skillHeading {
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc8b00;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .skillSubheading {
+    font-family: 'Lusitana', serif;
+  }
+  
+  .skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 10px 0px;
+  }
+  
+  .skillCard {
+    width: 100%;
+    max-width: 350px;
+    height: 180px;
+    background-color: #323846;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .skillIcon {
+    font-size: 3rem;
+    color: #02e5f2;
+  }
+  
+  .skillCardTitle {
+    font-family: 'Lusitana', serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #777a80;
+    margin-top: 0.5rem;
+  }
+  
+  .skillProgress {
+    width: 100%;
+    height: 8px;
+    background-color: #02e5f2;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+  }
+  
+  .skillProgressInner {
+    width: 75%;
+    height: 100%;
+    background-color: #20242d;
+    border-radius: 0.375rem;
+  }
+  
+  @media (min-width: 768px) {
+    .skillContainer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 4.375rem;
+      margin-right: 4.375rem;
+      gap: 1rem;
+    }
+  }
+
+ /* project Section */
+
+.projectSection {
+    background-color: #e4e4e4;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    min-height: 100vh;
+  }
+  
+  .projectHeading {
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc8b00;
+    margin-bottom: 2rem;
+  }
+  
+  .projectSubheading {
+    font-family: 'Lusitana', serif;
+  }
+  
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .projectCard {
+    background-color: #20242d;
+    border-radius: 0.375rem;
+    max-width: 430px;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .projectImage {
+    border-radius: 0.375rem;
+  }
+  
+  .projectCardTitle {
+    font-family: 'Lusitana', serif;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #777a80;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .projectButtonContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .projectButton {
+    font-family: 'Lusitana', serif;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .visitSiteButton {
+    background-color: #02e5f2;
+    color: white;
+  }
+  
+  .githubButton {
+    background-color: #e0e0e0;
+    color: black;
+  }
+  
+  @media (min-width: 768px) {
+    .projectContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+
+
+  /* Contact Section */
+
+.contactSection {
+    background-color: #140023;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    min-height: 100vh;
+  }
+  
+  .contactHeading {
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #cc8b00;
+    margin-bottom: 2rem;
+  }
+  
+  .contactSubheading {
+    font-family: 'Lusitana', serif;
+  }
+  
+  .contactContainer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contactIconContainer {
+    border: 2px solid #cc8b00;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #cc8b00;
+  }
+  
+  .contactIconArrow {
+    color: #cc8b00;
+  }
+  
+  .contactText {
+    font-family: 'Lusitana', serif;
+    font-size: 1.125rem;
+    color: #e9e6e5;
+  }
+  
+  .contactDivider {
+    margin: 2rem 0;
+    border-color: #f44336;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #e9e6e5;
+  }
+  
+  .socialIconContainer {
+    border: 2px solid #e9e6e5;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #e9e6e5;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .socialIconContainer:hover {
+    background-color: #cc8b00;
+    color: white;
+  }
+
+  /* Footer Section */
+
+.footerSection {
+    background-color: #323846;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .footerText {
+    font-family: 'Lusitana', serif;
+    color: white;
+    font-size: 1.125rem;
+  }
+  
+  .footerTextLarge {
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  
+  
